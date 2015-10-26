@@ -37,6 +37,7 @@
     <Compile Include="Private\Read.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Private\Parse.cs" />
+    <Compile Include="Public\Title.cs" />
     <Compile Include="Public\AskYesOrNo.cs" />
     <Compile Include="Public\AskTyped.cs" />
     <Compile Include="Public\AskString.cs" />
