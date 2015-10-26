@@ -16,7 +16,11 @@
                 if (TryParse<T>(read, out parsed))
                     return parsed;
 
-                Console.WriteLine((read.Any() ? "\"" + read + "\" is invalid!" : "Type something!"));
+                if (read.Any())
+                    Say("\"{0}\" is invalid!", read);
+                else
+                    Say("Type something!");
+
                 defaultAnswer = read;
             }
         }
