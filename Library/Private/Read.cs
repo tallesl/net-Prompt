@@ -42,7 +42,7 @@
                 }
             }
 
-            return new string(read.Reverse().ToArray());
+            return new string(read.Reverse().ToArray()).Trim();
         }
 
         private static void Backspace()
