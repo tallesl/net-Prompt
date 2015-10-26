@@ -11,7 +11,7 @@
         /// <returns>The answer</returns>
         public static bool AskYesOrNo(string label)
         {
-            var read = Ask(label + " (y/n)").Trim().ToLower();
+            var read = Ask(label + " (y/n)", allowEmpty: false).ToLower();
             return read == "y" || read == "yes";
         }
     }

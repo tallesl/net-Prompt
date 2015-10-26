@@ -8,21 +8,21 @@
         /// Asks a string.
         /// </summary>
         /// <param name="label">What you are asking</param>
-        /// <returns>The answer</returns>
-        public static string Ask(string label)
-        {
-            return Read(label, "");
-        }
-
-        /// <summary>
-        /// Asks a string.
-        /// </summary>
-        /// <param name="label">What you are asking</param>
         /// <param name="defaultAnswer">Answer suggestion that comes already typed for the user</param>
+        /// <param name="allowEmpty">Allow empty answer</param>
         /// <returns>The answer</returns>
-        public static string Ask(string label, string defaultAnswer)
+        public static string Ask(string label, string defaultAnswer = "", bool allowEmpty = false)
         {
-            return Read(label, defaultAnswer);
+            for (; ; )
+            {
+                var read = Read(label, defaultAnswer);
+
+                if (read != string.Empty || allowEmpty)
+                    return read;
+
+                Say("Type something!");
+                defaultAnswer = read;
+            }
         }
     }
 }

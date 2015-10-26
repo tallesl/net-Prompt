@@ -11,7 +11,7 @@
             for (; ; )
             {
                 T parsed;
-                var read = Ask(label, defaultAnswer);
+                var read = Ask(label, defaultAnswer, false);
 
                 if (TryParse<T>(read, out parsed))
                     return parsed;

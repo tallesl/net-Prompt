@@ -10,7 +10,7 @@
             Prompt.Say("So your string is \"" + text + "\" eh?");
 
             var boolean = Prompt.AskYesOrNo("Are you a Yes or a No person?");
-            Prompt.Say("So your are a " + (boolean ? "Yes" : "No") + " person eh?");
+            Prompt.Say("So you're a " + (boolean ? "Yes" : "No") + " person eh?");
 
             var integer = Prompt.Ask<int>("Give me an integer");
             Prompt.Say("So your integer is " + integer + " eh?");
