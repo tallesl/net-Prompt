@@ -1,6 +1,7 @@
-﻿namespace PromptUtil
+﻿namespace PromptLibrary
 {
     using System;
+    using System.Globalization;
 
     public static partial class Prompt
     {
@@ -11,8 +12,8 @@
         /// <returns>The answer</returns>
         public static bool AskYesOrNo(string label)
         {
-            var read = Ask(label + " (y/n)", allowEmpty: false).ToLower();
-            return read == "y" || read == "yes";
+            var read = Ask(label + " (y/n)", allowEmpty: false).ToUpperInvariant();
+            return read == "Y" || read == "YES";
         }
     }
 }

@@ -7,8 +7,8 @@
     <ProjectGuid>{9D5464F6-03EF-4510-8E98-23CC28F2C24F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PromptUtil.Example</RootNamespace>
-    <AssemblyName>PromptUtil.Example</AssemblyName>
+    <RootNamespace>PromptLibrary.Example</RootNamespace>
+    <AssemblyName>Prompt.Example</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

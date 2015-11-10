@@ -5,16 +5,10 @@
 
 Little helper on command prompting.
 
-[build]:     https://ci.appveyor.com/project/TallesL/Prompt
-[build-img]: https://ci.appveyor.com/api/projects/status/github/tallesl/Prompt
-
-[nuget]:     http://badge.fury.io/nu/Prompt
-[nuget-img]: https://badge.fury.io/nu/Prompt.png
-
 ## Usage
 
 ```cs
-using PromptUtil;
+using PromptLibrary;
 
 Prompt.Title("Silly example");
 
@@ -32,4 +26,10 @@ Prompt.Say("So your UUID is \"{0}\" eh?", uuid);
 
 Prompt.Say("Okay, thanks, bye!");
 ```
+
 ![](console.png)
+
+[build]:     https://ci.appveyor.com/project/TallesL/Prompt
+[build-img]: https://ci.appveyor.com/api/projects/status/github/tallesl/Prompt
+[nuget]:     http://badge.fury.io/nu/Prompt
+[nuget-img]: https://badge.fury.io/nu/Prompt.png

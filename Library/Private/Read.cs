@@ -1,11 +1,13 @@
-﻿namespace PromptUtil
+﻿namespace PromptLibrary
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics.CodeAnalysis;
     using System.Linq;
 
     public static partial class Prompt
     {
+        [SuppressMessage("Microsoft.Globalization", "CA1303:Do not pass literals as localized parameters", Justification = "That's from the user, you dummy.")]
         private static string Read(string label, string defaultAnswer)
         {
             label += ": ";

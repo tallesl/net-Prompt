@@ -1,4 +1,4 @@
-﻿namespace PromptUtil
+﻿namespace PromptLibrary
 {
     using System;
 

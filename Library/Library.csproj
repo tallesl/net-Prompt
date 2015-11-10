@@ -7,7 +7,7 @@
     <ProjectGuid>{ECF7C49A-561D-4616-BAAC-2E037BB40894}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PromptUtil</RootNamespace>
+    <RootNamespace>PromptLibrary</RootNamespace>
     <AssemblyName>Prompt</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -29,6 +29,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\Prompt.xml</DocumentationFile>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -45,6 +54,9 @@
     <Compile Include="Public\AskTyped.cs" />
     <Compile Include="Public\AskString.cs" />
     <Compile Include="Public\Say.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

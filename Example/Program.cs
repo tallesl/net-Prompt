@@ -1,4 +1,4 @@
-﻿namespace PromptUtil.Example
+﻿namespace PromptLibrary.Example
 {
     using System;
 

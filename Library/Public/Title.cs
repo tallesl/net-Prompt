@@ -1,16 +1,16 @@
-﻿namespace PromptUtil
+﻿namespace PromptLibrary
 {
     using System;
 
     public static partial class Prompt
     {
         /// <summary>
-        /// Sets the console title.
+        /// Sets the window title.
         /// </summary>
-        /// <param name="title">Title to set</param>
-        public static void Title(string title)
+        /// <param name="text">Text to set on title</param>
+        public static void Title(string text)
         {
-            Console.Title = title;
+            Console.Title = text;
         }
     }
 }

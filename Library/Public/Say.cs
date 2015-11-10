@@ -1,6 +1,7 @@
-﻿namespace PromptUtil
+﻿namespace PromptLibrary
 {
     using System;
+    using System.Globalization;
 
     /// <summary>
     /// Little helper on command prompting.
@@ -14,7 +15,7 @@
         /// <param name="format">Optional formatting passed to string.Format</param>
         public static void Say(string something, params object[] format)
         {
-            var formatted = string.Format(something, format);
+            var formatted = string.Format(CultureInfo.InvariantCulture, something, format);
             Console.WriteLine(formatted);
             Console.WriteLine();
 

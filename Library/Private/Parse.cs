@@ -1,7 +1,8 @@
-﻿namespace PromptUtil
+﻿namespace PromptLibrary
 {
     using System;
     using System.ComponentModel;
+    using System.Diagnostics.CodeAnalysis;
     using System.Linq;
 
     public static partial class Prompt
@@ -25,6 +26,7 @@
             }
         }
 
+        [SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes", Justification = "That's OK.")]
         private static bool TryParse<T>(string value, out T parsed)
         {
             var converter = TypeDescriptor.GetConverter(typeof(T));
