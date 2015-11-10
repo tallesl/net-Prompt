@@ -42,6 +42,9 @@
                 }
             }
 
+            if (_clearBetweenSays)
+                Clear();
+
             return new string(read.Reverse().ToArray()).Trim();
         }
 

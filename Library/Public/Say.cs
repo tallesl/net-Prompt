@@ -17,6 +17,12 @@
             var formatted = string.Format(something, format);
             Console.WriteLine(formatted);
             Console.WriteLine();
+
+            if (_clearBetweenSays)
+            {
+                PressAnyKeyToContinue();
+                Clear();
+            }
         }
     }
 }
