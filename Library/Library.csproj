@@ -38,6 +38,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Private\Parse.cs" />
     <Compile Include="Public\Clear.cs" />
+    <Compile Include="Public\PressAnyKeyToContinue.cs" />
     <Compile Include="Public\Title.cs" />
     <Compile Include="Public\AskYesOrNo.cs" />
     <Compile Include="Public\AskTyped.cs" />
