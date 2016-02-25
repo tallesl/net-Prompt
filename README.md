@@ -1,9 +1,20 @@
+<p align="center">
+    <a href="#prompt">
+        <img alt="logo" src="Assets/logo-200x200.png">
+    </a>
+</p>
+
 # Prompt
 
 [![][build-img]][build]
 [![][nuget-img]][nuget]
 
 Little helper on command prompting.
+
+[build]:     https://ci.appveyor.com/project/TallesL/net-prompt
+[build-img]: https://ci.appveyor.com/api/projects/status/github/tallesl/net-prompt?svg=true
+[nuget]:     https://www.nuget.org/packages/Prompt
+[nuget-img]: https://badge.fury.io/nu/Prompt.svg
 
 ## Usage
 
@@ -27,9 +38,6 @@ Prompt.Say("So your UUID is \"{0}\" eh?", uuid);
 Prompt.Say("Okay, thanks, bye!");
 ```
 
-![](console.png)
+![][console]
 
-[build]:     https://ci.appveyor.com/project/TallesL/Prompt
-[build-img]: https://ci.appveyor.com/api/projects/status/github/tallesl/Prompt
-[nuget]:     http://badge.fury.io/nu/Prompt
-[nuget-img]: https://badge.fury.io/nu/Prompt.png
+[console]: Assets/console.png
